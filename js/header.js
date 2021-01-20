@@ -51,22 +51,32 @@ function search() {
             img: "url('/images/search_icon.png') -105px -50px",
             position: "-40px -80px",
             url: "https://www.deepl.com/translator#ru/zh/"
-        }, {
-            name: "B站",
-            img: "url('/images/search_icon.png') -105px -125px",
-            position: "-40px -200px",
-            url: "http://search.bilibili.com/all?keyword="
-        }, {
+        },{
+            name: "豆瓣",
+            img: "url('/images/search_icon.png') -80px -100px",
+            position: "0px -160px",
+            url: "https://www.douban.com/search?source=suggest&q="
+        },{
             name: "知乎",
             img: "url('/images/search_icon.png') -105px -100px",
             position: "-40px -160px",
             url: "https://www.zhihu.com/search?type=content&q="
-        }, {
+        },{
             name: "微博",
             img: "url('/images/search_icon.png') -80px -125px",
             position: "0px -200px",
             url: "https://s.weibo.com/weibo/"
-        },]
+        },{
+            name: "B站",
+            img: "url('/images/search_icon.png') -105px -125px",
+            position: "-40px -200px",
+            url: "http://search.bilibili.com/all?keyword="
+        },{
+            name: "youtube",
+            img: "url('/images/search_icon.png') -105px -150px",
+            position: "-40px -240px",
+            url: "https://www.youtube.com/results?search_query="
+        }]
     };
     var localSearchData = localStorage.getItem("searchData");
     if (localSearchData) {
