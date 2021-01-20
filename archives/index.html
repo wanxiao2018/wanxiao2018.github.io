@@ -1,187 +1,744 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+
 <head>
+  <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="viggo" />
+  <title>Russian Go - 冲！</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="/favicon.ico">
   
-  
-  <title>Archives | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="stylesheet" href="/css/hclonely.css">
+<link rel="stylesheet" href="//fonts.loli.net/css?family=Arimo:400,700,400italic.css">
+<link rel="stylesheet" href="/css/fonts/linecons/css/linecons.min.css">
+<link rel="stylesheet" href="/css/fonts/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/xenon-core.min.css">
+<link rel="stylesheet" href="/css/xenon-components.min.css">
+<link rel="stylesheet" href="/css/xenon-skins.min.css">
+<link rel="stylesheet" href="/css/nav.min.css">
 
   
-  
-<link rel="stylesheet" href="/css/style.css">
+<script src="/js/jquery-1.11.1.min.js"></script>
 
   
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<script src="/js/header.js"></script>
 
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+        
+<script src="/js/html5shiv.min.js"></script>
+
+        
+<script src="/js/respond.min.js"></script>
+
+    <![endif]-->
+  <!-- / FB Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://example.com/archives/index.html">
+  <meta property="og:title" content="Russian Go - 冲！">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="Russian Go - 冲！">
+  
+  <!-- / Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Russian Go - 冲！">
+  <meta name="twitter:description" content="">
+  
+  
+  <!-- 直接添加html内容即可 -->
+<!-- 可设置多行 -->
   
 <meta name="generator" content="Hexo 5.3.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+</head>
+
+<body class="page-body">
+<div class="page-container">
+<div class="sidebar-menu toggle-others fixed">
+  <div class="sidebar-menu-inner">
+    <header class="logo-env">
+      <div class="logo">
+        <a href="/index.html" class="logo-expanded">
+          <img src="/images/logo@2x.png" width="100%" alt="" />
+        </a>
+        <a href="/index.html" class="logo-collapsed">
+          <img src="/images/logo-collapsed@2x.png" width="40" alt="" />
+        </a>
       </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/01/20/hello-world/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-01-20T09:28:32.988Z" itemprop="datePublished">Jan 20</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/01/20/hello-world/">Hello World</a>
-    </h1>
-  
-
+      <div class="mobile-menu-toggle visible-xs">
+        <a href="#" data-toggle="user-info-menu">
+          <i class="linecons-cog"></i>
+        </a>
+        <a href="#" data-toggle="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
     </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/01/20/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
+    <ul id="main-menu" class="main-menu">
       
-      &copy; 2021 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      <li>
+        
+          <a href="#学校网站" class="smooth">
+            
+            <i class="fas fa-school"></i>
+            <span class="title">学校网站</span>
+          </a>
+          
+      </li>
+      
+      <li>
+        
+          <a href="#每日一看" class="smooth">
+            
+            <i class="fas fa-star"></i>
+            <span class="title">每日一看</span>
+          </a>
+          
+      </li>
+      
+      <li>
+        
+          <a href="#俄语新闻" class="smooth">
+            
+            <i class="fas fa-newspaper"></i>
+            <span class="title">俄语新闻</span>
+          </a>
+          
+      </li>
+      
+      <li>
+        
+        <a class="fas fa-angle-down" style="cursor: pointer;">
+          
+            <i class="fas fa-tools"></i>
+            <span class="title">常用工具</span>
+          </a>
+          
+          <ul>
+            
+            <li>
+              <a href="#数学工具" class="smooth">
+                <i class="fas fa-infinity"></i>
+                <span class="title">数学工具</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#实用工具" class="smooth">
+                <i class="fas fa-file"></i>
+                <span class="title">实用工具</span>
+              </a>
+            </li>
+            
+          </ul>
+          
+      </li>
+      
+      
+      <li class="submit-tag">
+        <a href="/about/">
+          <i class="far fa-heart"></i>
+          <span class="tooltip-blue">关于本站</span>
+        </a>
+      </li>
+      
+      
+    </ul>
+  </div>
+</div>
+
+
+<div class="main-content">
+  <nav class="navbar user-info-navbar" role="navigation">
+    <ul class="user-info-menu left-links list-inline list-unstyled">
+      <li class="hidden-sm hidden-xs hover-line">
+        <a href="#" data-toggle="sidebar">
+          <i class="fas fa-bars"></i>
+        </a>
+      </li>
+      <li class="dropdown hover-line language-switcher">
+        <a href="/index.html" class="dropdown-toggle" data-toggle="dropdown">
+          <img src="/images/flags/flag-cn.png" alt="flag-cn" /> Chinese
+        </a>
+        <!-- <ul class="dropdown-menu languages">
+          <li class="active">
+            <a href="/index.html">
+              <img src="/images/flags/flag-cn.png" alt="flag-cn" alt="flag-cn" /> Chinese
+            </a>
+          </li>
+        </ul> -->
+      </li>
+      <li class="switch-mode hover-line" onclick="switchNightMode()">
+        <a href="#">
+          <svg t="1593061068148" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1681" width="16" height="16">
+            <path d="M582.4 326.4c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0 448c-70.4 0-131.2-36.8-164.8-92.8 12.8 3.2 27.2 4.8 40 4.8 121.6 0 219.2-99.2 219.2-219.2 0-17.6-1.6-35.2-6.4-52.8 60.8 32 102.4 96 102.4 169.6 1.6 104-84.8 190.4-190.4 190.4zM582.4 262.4c17.6 0 32-14.4 32-32v-128c0-17.6-14.4-32-32-32s-32 14.4-32 32v128c0 17.6 14.4 32 32 32zM262.4 582.4c0-17.6-14.4-32-32-32h-128c-17.6 0-32 14.4-32 32s14.4 32 32 32h128c17.6 0 32-14.4 32-32zM310.4 356.8c6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6 12.8-12.8 12.8-32 0-44.8l-91.2-91.2c-12.8-12.8-32-12.8-44.8 0-12.8 12.8-12.8 32 0 44.8l91.2 91.2zM944 220.8c-12.8-12.8-32-12.8-44.8 0l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-33.6 0-44.8zM310.4 808l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-32 0-44.8-11.2-11.2-32-11.2-44.8 0z" p-id="1682" fill="#707070"></path>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    
+    </nav>
+    <section class="sousuo">
+      <div class="search">
+        <div class="search-box">
+          <span class="search-icon" style="background: url(/images/search_icon.png) 0px 0px; opacity: 1;"></span>
+          <input type="text" id="txt" class="search-input" autocomplete="off" placeholder="请输入关键字，按回车 / Enter 搜索">
+          <button class="search-btn" id="search-btn"><i class="fa fa-search"></i></button>
+        </div>
+        <!-- 搜索热词 -->
+        <div class="box search-hot-text" id="box" style="display: none;">
+          <ul></ul>
+        </div>
+        <!-- 搜索引擎 -->
+        <div class="search-engine" style="display: none;">
+          <div class="search-engine-head">
+            <strong class="search-engine-tit">选择您的默认搜索引擎：</strong>
+            <div class="search-engine-tool">搜索热词： <span id="hot-btn"></span></div>
+          </div>
+          <ul class="search-engine-list search-engine-list_zmki_ul">
+          </ul>
+        </div>
+    </section>
+    <script>search()</script>
+    
+    
+    
+    <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="学校网站"></i>学校网站</h4>
+<div class="row">
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://ruz.spbstu.ru/faculty/98/groups/30847', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://ruz.spbstu.ru/faculty/98/groups/30847">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/spb_c.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Рассписание</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://dl-phnt.spbstu.ru/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://dl-phnt.spbstu.ru/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/cdo.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>СДО-ИФНиТ</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://lk.spbstu.ru/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://lk.spbstu.ru/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/spb_logo.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Мой-Политех</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://elib.spbstu.ru/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://elib.spbstu.ru/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/spb_lib.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>ЭБ-СПБГУ</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br />
+    
+    
+    
+    
+    <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="每日一看"></i>每日一看</h4>
+<div class="row">
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://weread.qq.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://weread.qq.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/weixindushu.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>微信读书</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.notion.so/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.notion.so/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/notion.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Notion</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://sspai.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://sspai.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/shaoshupai.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>少数派</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.52pojie.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.52pojie.cn/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/wuaipojie.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>吾爱破解</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://tophub.today/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://tophub.today/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/tophub.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>今日热榜</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.zhihu.com/hot', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.zhihu.com/hot">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/zhihu.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>知乎热榜</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.volf.club/index.php/archives/1106/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.volf.club/index.php/archives/1106/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/weibo.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>微博热搜</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://36kr.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://36kr.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/36kr.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>36kr</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://www.ruanyifeng.com/blog/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://www.ruanyifeng.com/blog/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/ruan.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>阮一峰</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://github.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://github.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/github.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Github</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.bilibili.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.bilibili.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/bilibili.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Bilibili</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.youtube.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.youtube.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/youtube.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Youtube</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br />
+    
+    
+    
+    
+    <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="俄语新闻"></i>俄语新闻</h4>
+<div class="row">
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://mail.ru/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://mail.ru/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/mail_ru.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>mail</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://sputniknews.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://sputniknews.cn/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/Sputnik.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Sputnik</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://tass.ru/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://tass.ru/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/tass.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>TASS</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://xn--80aesfpebagmfblc0a.xn--p1ai/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://xn--80aesfpebagmfblc0a.xn--p1ai/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/varius.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Стопкоронавирус.рф </strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://vk.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://vk.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/vk.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Vk</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br />
+    
+    
+    
+    
+    
+    <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="数学工具"></i>数学工具</h4>
+<div class="row">
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://mathpretty.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://mathpretty.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/wenyi.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>文艺数学君</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.wolfram.com/language/fast-introduction-for-programmers/zh/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.wolfram.com/language/fast-introduction-for-programmers/zh/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/wolfram.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Wolfram</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.latexlive.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.latexlive.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/mamishuo.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Latex_妈咪说</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://mathcode.herokuapp.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://mathcode.herokuapp.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/latex.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>MathF</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br />
+    
+    
+    <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="实用工具"></i>实用工具</h4>
+<div class="row">
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.glonass-iac.ru/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.glonass-iac.ru/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/ica.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>ГЛОНАСС</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://excalidraw.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://excalidraw.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/excalidraw.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Excalidraw</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://smallpdf.com/cn', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://smallpdf.com/cn">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/images/logos/smallpdf.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>SmallPDF</strong>
+          </a>
+          <p class="overflowClip_2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br />
+    
+    
+    
+    
+<script src="/js/footer.js"></script>
+
+
+  <footer class="main-footer sticky footer-type-1">
+  <div class="footer-inner">
+    <!-- Add your copyright text here -->
+    <p>
+      
+      &copy; 2020 - 2021
+      <a href="javascript:void(0);"><strong>筱筱琪</strong></a> 
+    </p>
+    
+    <div class="go-up">
+      <a href="#" rel="go-top">
+        <i class="fas fa-angle-up"></i>
+      </a>
     </div>
   </div>
 </footer>
+</div>
+</div>
 
-    </div>
-    <nav id="mobile-nav">
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/TweenMax.min.js"></script>
+<script src="/js/resizeable.min.js"></script>
+<script src="/js/joinable.js"></script>
+<script src="/js/xenon-api.min.js"></script>
+<script src="/js/xenon-toggles.min.js"></script>
+<script src="/js/xenon-custom.min.js"></script>
+
+
+
+<textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arimo, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: 18.5714px; width: 53px;" class="autosizejs" id="autosizejs"></textarea>
+
+
   
-    <a href="/" class="mobile-nav-link">Home</a>
+  <!-- 直接添加html内容即可 -->
+<!-- 可设置多行 -->
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
+
 </html>
