@@ -3,24 +3,24 @@ function search() {
     var listIndex = -1;
     var hotList = 0;
     var searchData = {
-        "thisSearch": "https://www.baidu.com/s?wd=",
+        "thisSearch": "https://www.google.com/search?q=",
         "thisSearchIcon": "url('/images/search_icon.png')",
         "hotStatus": true,
         "data": [{
-            name: "Google",
+            name: "谷歌",
             img: "url('/images/search_icon.png')  -80px 0px",
             position: "0px 0px",
             url: "https://www.google.com/search?q="
         }, {
-            name: "Яндекс",
+            name: "bing",
             img: "url('/images/search_icon.png')  -80px -25px",
             position: "0px -40px",
-            url: "https://yandex.ru/search/?lr=2&text="
+            url: "https://www.bing.com/search?q="
         },  {
-            name: "bing",
+            name: "Яндекс",
             img: "url('/images/search_icon.png')  -105px 0px",
             position: "-40px 0px",
-            url: "https://www.bing.com/search?q="
+            url: "https://yandex.ru/search/?lr=2&text="
         },{
             name: "大БРКС",
             img: "url('/images/search_icon.png')  -105px -25px",
@@ -40,7 +40,7 @@ function search() {
             name: "Google翻译",
             img: "url('/images/search_icon.png') -80px -75px",
             position: "0px -120px",
-            url: "https://translate.google.cn/?sl=ru&tl=zh-CN&text="
+            url: "https://translate.google.com.hk/?sl=ru&tl=zh-CN&text="
         }, {
             name: "Яндекс翻译",
             img: "url('/images/search_icon.png') -105px -75px",
@@ -51,23 +51,32 @@ function search() {
             img: "url('/images/search_icon.png') -105px -50px",
             position: "-40px -80px",
             url: "https://www.deepl.com/translator#ru/zh/"
-        }, {
-            name: "B站",
-            img: "url('/images/search_icon.png') -105px -125px",
-            position: "-40px -200px",
-            url: "http://search.bilibili.com/all?keyword="
-        }, {
+        },{
+            name: "豆瓣",
+            img: "url('/images/search_icon.png') -80px -100px",
+            position: "0px -160px",
+            url: "https://www.douban.com/search?source=suggest&q="
+        },{
             name: "知乎",
             img: "url('/images/search_icon.png') -105px -100px",
             position: "-40px -160px",
             url: "https://www.zhihu.com/search?type=content&q="
-        }, {
+        },{
             name: "微博",
             img: "url('/images/search_icon.png') -80px -125px",
             position: "0px -200px",
             url: "https://s.weibo.com/weibo/"
-        },
-    ]
+        },{
+            name: "B站",
+            img: "url('/images/search_icon.png') -105px -125px",
+            position: "-40px -200px",
+            url: "http://search.bilibili.com/all?keyword="
+        },{
+            name: "youtube",
+            img: "url('/images/search_icon.png') -105px -150px",
+            position: "-40px -240px",
+            url: "https://www.youtube.com/results?search_query="
+        }]
     };
     var localSearchData = localStorage.getItem("searchData");
     if (localSearchData) {
